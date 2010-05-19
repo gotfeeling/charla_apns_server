@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  text: MyString
+  sound: false
+  badge: 1
+
+two:
+  text: MyString
+  sound: false
+  badge: 1

@@ -1,0 +1,33 @@
+
+
+Started GET "/messages/new" for 88.27.244.25 at 2010-05-14 17:35:08
+  Processing by MessagesController#new as HTML
+Rendered messages/_form.html.erb (20.0ms)
+Rendered messages/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 30ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/devices" for 80.27.102.68 at 2010-05-14 18:16:00
+  Processing by DevicesController#create as JSON
+  Parameters: {"device"=>{"token"=>"ca51dd700e7e1f3ec12e1e4fdaff541d03e4950bc051ce2c03f63dd262b472e0"}}
+Completed 200 OK in 240ms
+
+
+Started POST "/messages" for 88.27.244.25 at 2010-05-14 18:19:22
+  Processing by MessagesController#create as HTML
+  Parameters: {"commit"=>"Create Message", "authenticity_token"=>"a5H3z0jfst5Yc6V+bSrAU6/ZGwDfV+/GR5wx6rwl5/I=", "message"=>{"text"=>"hola meetapp! :)", "badge"=>"3", "sound"=>"1"}}
+Redirected to http://dev.gotfeeling.com/messages/1
+Completed 302 Found in 250ms
+
+
+Started GET "/messages/1" for 88.27.244.25 at 2010-05-14 18:19:22
+  Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+Rendered messages/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 88.27.244.25 at 2010-05-14 18:20:07
+  Processing by MessagesController#index as HTML
+Rendered messages/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)

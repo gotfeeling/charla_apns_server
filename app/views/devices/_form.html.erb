@@ -1,0 +1,20 @@
+<%= form_for(@device) do |f| %>
+  <% if @device.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@device.errors.count, "error") %> prohibited this device from being saved:</h2>
+    <ul>
+    <% @device.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :token %><br />
+    <%= f.text_field :token %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

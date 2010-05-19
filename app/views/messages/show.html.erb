@@ -1,0 +1,20 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Text:</b>
+  <%= @message.text %>
+</p>
+
+<p>
+  <b>Sound:</b>
+  <%= @message.sound %>
+</p>
+
+<p>
+  <b>Badge:</b>
+  <%= @message.badge %>
+</p>
+
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
